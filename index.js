@@ -14,12 +14,7 @@ btnClicked.addEventListener('click', (event) =>{
     let inputTyped = parseInt(document.querySelector('#number').value)
     console.log(inputTyped)
 
-    for(i=0; i<inputTyped; i++){
-        
-        let rangeValue = range.value
-        inputTyped = rangeValue
-        console.log(rangeValue)
-    }
+    
     // inputTyped = rangeValue
     event.preventDefault()
 })
