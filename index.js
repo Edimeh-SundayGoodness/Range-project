@@ -1,25 +1,23 @@
 let range = document.getElementById('input');
-let paragraph = document.querySelector('p')
-let p2 = document.querySelector('h6')
-let input = document.querySelector('#number')
-let btnClicked= document.getElementById('button')
+let paragraph = document.querySelector('p');
+let p2 = document.querySelector('h6');
+let input = document.querySelector('#number');
+let btnClicked= document.getElementById('button');
+let secondButton = document.getElementById('btn')
 
-range.addEventListener('change', () =>{
-    input = range.value
+secondButton.addEventListener('click', (event) =>{
+    input.value = range.value
     console.log(input)
+
+    event.preventDefault()
 })
 
 btnClicked.addEventListener('click', (event) =>{
 
-    let inputTyped = parseInt(document.querySelector('#number').value)
-    console.log(inputTyped)
-
-    
-    // inputTyped = rangeValue
+    range.value = input.value    
     event.preventDefault()
 })
 
-// input.addEventListener('input',)
 let checkValue = () =>{
     let rangeValue = range.value
     paragraph.innerText = range.value
